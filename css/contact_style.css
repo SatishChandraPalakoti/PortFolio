@@ -64,6 +64,10 @@
 	margin-left: -1vw;
 	opacity: 0; 
 }
+
+.row{
+	height: auto !important;
+}
  
 /*img{ 
 	display: block;
@@ -73,19 +77,16 @@
 }*/
  
  
-
- .col-md-12{   
- 	-webkit-transition: all 1s ease-in-out;
- }
+ 
 
  #linkedin,#outlook,#facebook,#github,#gmail{
- 	position: relative;
+ 	/*position: relative;*/
   	background-color: #4285F4;
 	border-radius: 50%;
- 	width: 20vh;
- 	height: 20vh;
- 	margin-left: 15vh;
- 	float: left; 
+ 	width: 15vh;
+ 	height: 15vh;
+ 	/*margin-left: 15vh;*/
+ 	/*float: left; */
  	-webkit-transition: all 0.5s ease-in-out;
 	box-shadow: 0px 0px 50px rgba(0,0,0,1);
 
@@ -112,15 +113,8 @@ background-color: white;
  }
 
   
- #linkedin>.fa,#facebook>.fa,#github>.fa,#gmail>.fa{
- 	margin-left: 6.5vh;
- 	margin-top: 5vh;
+ #linkedin>.fa,#facebook>.fa,#github>.fa,#gmail>.fa,#outlook>.fa{
+ 	margin-left: 4.5vh;
+ 	margin-top: 4.5vh;
  }
-
-#outlook>.fa{
- 	margin-left: 6vh;
- 	margin-top: 5vh;
- }
-
-
  
