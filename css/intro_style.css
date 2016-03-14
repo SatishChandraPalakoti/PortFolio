@@ -103,7 +103,7 @@ a{
 		background-size: cover;
 		-webkit-transition: all 1s ease-in-out;
 		box-shadow: 5px 5px 100px 30px black;
-		opacity: 0;
+		opacity: 0.5
 		margin-top: 8vh;
 		z-index: 1;
 	}
@@ -114,7 +114,7 @@ a{
 		height: 25vh;
 		border-radius: 5%;
 		border: 5px solid white;
-		background-image: url('/pages/img/ong.jpg');
+		background-image: url('/pages/img/me.jpg');
 		background-size: cover;
 		-webkit-transition: all 1s ease-in-out;	
 		box-shadow: 5px 5px 100px 30px white; 
