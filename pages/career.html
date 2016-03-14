@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CAREER</title>
+ 
+    
+</head>
+
+<body>
+  <div class="container-fluid" ng-init="init_trend()">
+    
+  <div class="row">
+  <div class="col-md-4">
+  	<table class=" table dettablea borderless1 ">  
+					<tr class="exp"><th colspan="4" >EXPERIENCE</th></tr>
+					<tr><td colspan=""><i class="fa fa-briefcase fa-3x"></i></td><td colspan="3">HongKong Shanghai Banking Corp.(HSBC)</td></tr>
+					<tr><td class="tabhead goblue">Designation</td><td>Software Engineer</td><td class="tabhead goblue">Role</td><td>BI Developer/ Environment Engineer</td></tr>
+					<tr><td  ><i class="fa fa-calendar goblue"></i></td><td colspan="3">Jan'13 - Aug'14</td></tr>
+					</table>
+					
+					<table class=" table dettablea borderless"> 
+					<tr><td colspan=""><i class="fa fa-briefcase fa-2x"></i></td><td colspan="3">HongKong Shanghai Banking Corp.(HSBC)</td></tr>
+					<tr><td class="tabhead goblue">Designation</td><td>Trainee Software Engineer</td><td class="tabhead goblue">Role</td><td>BI Developer</td></tr>
+					<tr><td ><i class="fa fa-calendar goblue"></i></td><td colspan="3">Aug'12 - Dec'12</td></tr>
+					</table> 
+
+					<table class="table dettablea borderless"> 
+					<tr><td colspan=""><i class="fa fa-briefcase fa-1x"></i></td><td colspan="3">Prolifics Inc.</td></tr>
+					<tr><td class="tabhead" goblue>Designation</td><td>Software Intern</td><td class="tabhead goblue">Role</td><td>UI Dev / Web Automation Test</td></tr>
+					<tr><td ><i class="fa fa-calendar goblue"></i></td><td colspan="3">Nov'15</td></tr>
+					</table>  
+ 					
+ 					<table>  
+					<tr><th><span><a href="/" class="btn navbtn"><i class="fa fa-arrow-left"></i> Back</button></span></th><th><span><a href="/resume_psc.pdf" target="_blank" class="btn navbtn"><i class="fa fa-download"></i></button>  Download Resume</span></th></tr>
+					</table>
+  </div>
+    
+    	<div class="col-md-8 chart" google-chart chart="chartObject"> 
+    	</div>
+  </div>
+
+  
+    
+  </div>
+    
+  </div>
+
+</body>
+  <style type="text/css">
+
+  .exp{
+  	color: #4285F4;
+  	font-size: 4vh;
+  	 
+
+  }
+
+.dettablea{ 
+		font-family: 'Josefin Sans', sans-serif;
+	  	color: black; 
+		-webkit-transition: all 1s ease-in-out; 
+		opacity: 1;
+		margin-top: 2vh; 
+		font-weight: bold;
+		margin
+	}
+
+	.dettablea>tr>td>.tabhead{
+		color: red;
+	}
+
+	 
+	.navbtn{
+		background-color: #4285F4;
+		margin-left: 4vw;
+		color: white;
+
+	}
+
+	.navbtn>i{
+		color: white;
+	}
+
+	@-webkit-keyframes movleft{
+		from{-webkit-transform: translateX(-0.75vw)}
+		50%{-webkit-transform: translateX(0vw) }
+		to{-webkit-transform: translateX(-0.75vw)}
+	} 
+
+	@-webkit-keyframes popdown{
+		from{-webkit-transform: translateY(-1.25vh)}
+		50%{-webkit-transform: translateY(0vh) }
+		to{-webkit-transform: translateY(-1.25vh)}
+	}
+
+	.fa-arrow-left{
+	-webkit-animation:  movleft .5s ease-in-out infinite;
+	
+}
+	
+	.fa-download{
+	-webkit-animation:  popdown .5s ease-in-out infinite;
+	
+}
+
+.navbtn:hover>.fa-download,.navbtn:hover>.fa-arrow-left{
+
+  	-webkit-animation-play-state: paused;
+}
+.dettablea>tbody>tr:hover{
+	background-color: #4285F4;
+	color: white;
+
+}
+
+.dettablea>tbody>tr:hover>td>.fa,.dettablea>tbody>tr:hover >.tabhead {
+	font-weight: bold;
+	color: white;
+}
+
+.dettablea{ 
+		font-family: 'Josefin Sans', sans-serif; 
+		
+		-webkit-transition: all 1s ease-in-out; 
+		/*opacity: 0;*/ 
+		font-weight: bold;
+}
+
+.chart{
+	/*box-shadow: 0px 10px 1px 0px black;*/
+}
+
+.goblue,.fa-briefcase{
+	color: #4285F4;
+}
+</style>
+</html>

@@ -1,0 +1,126 @@
+
+ 
+ body{
+ 	background-image: url('/pages/img/intro_new.jpg'); 
+ 	background-size:cover;
+	-webkit-transition: all 1s ease-in-out;
+ }  
+
+ span{
+ 	color: black; 
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14px;
+	/*text-shadow: 2px 2px 50px rgba(200,200,200,0.8);*/
+	 
+	font-weight: bold;
+	
+ } 
+ html,body,.container-fluid{
+ 	height: 100%;
+ } 
+#linkedin_img{ 
+	-webkit-transition: all 1s ease-in-out;
+	position: absolute;  
+	bottom: 0; 
+	margin-left: -5vw;
+	opacity: 0;
+}
+
+.col-md-1{ 
+	height: 25vh; 
+	position: relative;
+	 
+}
+
+#outlook_img{ 
+	-webkit-transition: all 1s ease-in-out;
+	position: absolute; 
+	bottom: 0;margin-left: -2vw;
+	opacity: 0;
+
+	 
+}
+
+#facebook_img{
+ opacity: 0;
+	-webkit-transition: all 1s ease-in-out;
+	position: absolute; 	
+	 bottom: 0;margin-left: -2vw;
+}
+
+#github_img{
+	 opacity: 0;
+	-webkit-transition: all 1s ease-in-out;
+	position: absolute;  
+	bottom: 0;
+	margin-left: -1vw;
+	 
+}
+
+#gmail_img{ 
+	-webkit-transition: all 1s ease-in-out;
+	position: absolute; 
+	bottom: 0;
+	margin-left: -1vw;
+	opacity: 0; 
+}
+ 
+/*img{ 
+	display: block;
+	opacity: 0;
+	-webkit-transition: all 0.1s ease-in-out;
+	 position: absolute;
+}*/
+ 
+ 
+
+ .col-md-12{   
+ 	-webkit-transition: all 1s ease-in-out;
+ }
+
+ #linkedin,#outlook,#facebook,#github,#gmail{
+ 	position: relative;
+  	background-color: #4285F4;
+	border-radius: 50%;
+ 	width: 20vh;
+ 	height: 20vh;
+ 	margin-left: 15vh;
+ 	float: left; 
+ 	-webkit-transition: all 0.5s ease-in-out;
+	box-shadow: 0px 0px 50px rgba(0,0,0,1);
+
+ }
+
+ 	 #linkedin>.fa,#outlook>.fa,#facebook>.fa,#github>.fa,#gmail>.fa
+ 	 {-webkit-transition: all 1s ease-in-out;
+ 	color: white;
+}
+
+ #linkedin:hover,#outlook:hover,#facebook:hover,#github:hover,#gmail:hover{
+cursor: pointer;
+-webkit-transition: all 0.5s ease-in-out;
+box-shadow: 0px 0px 80px #4285F4;
+background-color: white;  
+ }
+
+ #linkedin:hover>.fa,#facebook:hover>.fa,#github:hover>.fa,#outlook:hover>.fa,#gmail:hover>.fa{
+ 
+ color: #4285F4;
+-webkit-transition: all 0.5s ease-in-out;
+
+ 
+ }
+
+  
+ #linkedin>.fa,#facebook>.fa,#github>.fa,#gmail>.fa{
+ 	margin-left: 6.5vh;
+ 	margin-top: 5vh;
+ }
+
+#outlook>.fa{
+ 	margin-left: 6vh;
+ 	margin-top: 5vh;
+ }
+
+
+ 

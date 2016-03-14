@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	          <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!--JQuery CDN link-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- FontAwesome Link-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<div class="container-fluid">
+  	
+
+  	 
+  		<div class="row">
+  		<div class="col-md-1">
+  			
+  		</div>
+  		<div class="col-md-1">
+  		<span id="linkedin_img">https://www.linkedin.com/in/satishchandrapalakoti</span>
+  			 
+  		</div>
+  		<div class="col-md-1">
+  			
+  		</div>
+  		<div class="col-md-1">
+  		 <span id="outlook_img">palakoti.satishchandra@outlook.com</span>
+  			 
+  		</div>
+  		<div class="col-md-1">
+  			
+  		</div>
+  		<div class="col-md-1">
+  			<span id="facebook_img">https://facebook.com/satishchandraPalakoti</span>
+  		</div>
+  		<div class="col-md-1">
+  			
+  		</div>
+  		<div class="col-md-1">
+  		 <span id="github_img">https://github.com/SatishChandraP</span>
+  		</div>
+  		<div class="col-md-1">
+  			
+  		</div>
+  		<div class="col-md-1">
+  			<span id="gmail_img">satishchandra.palakoti@sjsu.edu</span>
+  		</div>
+  		<div class="col-md-1">
+  			
+  		</div>
+  		<div class="col-md-1">
+  			
+  		</div>
+   
+  	 
+  		<div class="col-md-12">
+  			
+  			<div id="linkedin"> 
+  				<i class="fa fa-linkedin-square fa-4x"></i>
+  			</div>
+  			
+  			<a href="mailto:palakoti.satishchandra@outlook.com?Subject=With%20Reference%20to%20your%20webportal"><div id="outlook"> 
+  				   <i class="fa fa-envelope fa-4x"></i>
+  			</div></a>
+  			
+  			<div id="facebook">
+  				  <i class="fa fa-facebook-square fa-4x"></i> 
+  			</div>
+  			
+  			<div id="github"> 
+  				 <i class="fa fa-github-square fa-4x"></i> 
+  			</div> 
+  			
+  			<a href="mailto:satishchandra.palakoti@sjsu.edu?Subject=With%20Reference%20to%20your%20webportal"><div id="gmail"> 
+  				 <i class="fa fa-google-plus fa-4x"></i>
+  			</div></a>
+  		</div>
+  			
+  		</div>
+  	 
+  	  
+  </div>
+</body>
+
+<script type="text/javascript">
+		
+$("#linkedin").mouseover(function(){ 		
+			$(this).css({transform: 'scale(1.25)'}); 
+			$("#linkedin_img").css({opacity:'1'}); 
+			$("#linkedin_img").animate({bottom:'8vh'},100);
+			$("#linkedin_id").css({opacity:'1'}); 
+			$("#linkedin_id").animate({marginTop:'18vh'},100);
+			$("#facebook").css({transform: 'scale(0.75)'});
+			$("#github").css({transform: 'scale(0.75)'});
+			$("#outlook").css({transform: 'scale(0.75)'});
+			$("#gmail").css({transform: 'scale(0.75)'});
+
+		})
+		$("#linkedin").mouseout(function(){ 
+			$(this).css({transform: 'scale(1)'});
+			$("#linkedin_img").animate({bottom:'0vh'},100);
+			$("#linkedin_img").css({opacity:'0'}); 
+			$("#facebook").css({transform: 'scale(1)'});
+			$("#github").css({transform: 'scale(1)'});
+			$("#outlook").css({transform: 'scale(1)'});
+			$("#gmail").css({transform: 'scale(1)'});
+
+		})
+
+		$("#facebook").mouseover(function(){ 		
+			$(this).css({transform: 'scale(1.25)'}); 
+			$("#facebook_img").css({opacity:'1'}); 
+			$("#facebook_img").animate({bottom:'8vh'},100);
+			$("#linkedin").css({transform: 'scale(0.75)'});
+			$("#github").css({transform: 'scale(0.75)'});
+			$("#outlook").css({transform: 'scale(0.75)'});
+			$("#gmail").css({transform: 'scale(0.75)'});
+
+		})
+		$("#facebook").mouseout(function(){ 
+			$(this).css({transform: 'scale(1)'});
+			$("#facebook_img").animate({bottom:'0vh'},100);
+			$("#facebook_img").css({opacity:'0'}); 
+			$("#linkedin").css({transform: 'scale(1)'});
+			$("#github").css({transform: 'scale(1)'});
+			$("#outlook").css({transform: 'scale(1)'});
+			$("#gmail").css({transform: 'scale(1)'});
+
+		})
+
+		$("#github").mouseover(function(){ 
+			$(this).css({transform: 'scale(1.25)'});
+			$("#github_img").animate({bottom:'8vh'},100);
+			$("#github_img").css({opacity:'1'}); 
+			$("#linkedin").css({transform: 'scale(0.75)'});
+			$("#outlook").css({transform: 'scale(0.75)'});
+			$("#facebook").css({transform: 'scale(0.75)'});
+			$("#gmail").css({transform: 'scale(0.75)'});
+
+		})
+		$("#github").mouseout(function(){ 
+			$(this).css({transform: 'scale(1)'});
+			$("#github_img").animate({bottom:'0vh'},100);
+			$("#github_img").css({opacity:'0'}); 
+			$("#linkedin").css({transform: 'scale(1)'});
+			$("#outlook").css({transform: 'scale(1)'});
+			$("#facebook").css({transform: 'scale(1)'});
+			$("#gmail").css({transform: 'scale(1)'});
+
+		})
+
+		$("#outlook").mouseover(function(){ 
+			$(this).css({transform: 'scale(1.25)'});
+			$("#outlook_img").animate({bottom:'8vh'},100);
+			$("#outlook_img").css({opacity:'1'}); 
+			$("#facebook").css({transform: 'scale(0.75)'});
+			$("#github").css({transform: 'scale(0.75)'});
+			$("#linkedin").css({transform: 'scale(0.75)'});
+			$("#gmail").css({transform: 'scale(0.75)'});
+
+		})
+		$("#outlook").mouseout(function(){ 
+			$(this).css({transform: 'scale(1)'});
+			$("#outlook_img").animate({bottom:'0vh'},100);
+			$("#outlook_img").css({opacity:'0'}); 
+			$("#facebook").css({transform: 'scale(1)'});
+			$("#github").css({transform: 'scale(1)'});
+			$("#linkedin").css({transform: 'scale(1)'});
+			$("#gmail").css({transform: 'scale(1)'});
+
+		})
+
+		$("#gmail").mouseover(function(){ 
+			$(this).css({transform: 'scale(1.25)'});
+			$("#gmail_img").css({opacity:'1'}); 
+			$("#gmail_img").animate({bottom:'8vh'},100);
+			$("#facebook").css({transform: 'scale(0.75)'});
+			$("#github").css({transform: 'scale(0.75)'});
+			$("#outlook").css({transform: 'scale(0.75)'});
+			$("#linkedin").css({transform: 'scale(0.75)'});
+
+		})
+		$("#gmail").mouseout(function(){ 
+			$(this).css({transform: 'scale(1)'});
+			$("#gmail_img").animate({bottom:'0vh'},100);
+			$("#gmail_img").css({opacity:'0'}); 
+			$("#facebook").css({transform: 'scale(1)'});
+			$("#github").css({transform: 'scale(1)'});
+			$("#outlook").css({transform: 'scale(1)'});
+			$("#linkedin").css({transform: 'scale(1)'});
+
+		})
+ 
+		$("#linkedin").click(
+			function(){
+				window.open("https://www.linkedin.com/in/satishchandrapalakoti");
+			}
+		);
+
+		$("#facebook").click(
+			function(){
+				window.open("https://www.facebook.com/in/satishchandrapalakoti");
+			}
+		);
+
+		 
+
+		$("#github").click(
+			function(){
+				window.open("https://github.com/SatishChandraPalakoti");
+			}
+		);
+
+		 
+
+</script>
+</html>

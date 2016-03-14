@@ -1,0 +1,123 @@
+@-webkit-keyframes myrotate{
+        from{-webkit-transform: rotateY(0deg)}
+        50%{-webkit-transform: rotateY(360deg) }
+        to{-webkit-transform: rotateY(0deg)}
+    } 
+.navbar-header>img{
+    width: 1.5vw;
+    height: 4vh;
+    margin-top: 1vh;
+    margin-left: 0.25vw;
+
+}
+    
+html,body{
+    height: 100%; 
+
+}
+.navbar-header{
+    margin-left: 2%;
+    margin-top: 0.2%;
+}
+#content-views{
+    height: 100%;
+}
+
+.navbar-default{
+    bottom: 0px;
+}
+
+body{
+    background-image: url('/img/intro_new.jpg');
+    background-size: cover;
+}
+ .navbar {
+    
+    background-color: rgba(66,133,244,0.7);
+    /*background-color: white;*/
+    box-shadow: 0px 5px 40px black;
+  
+
+}
+
+.navbar-header>img{
+    width: 4vw;
+    height:6vh;
+    margin-top: -0.4vh;
+    -webkit-animation: myrotate 5s ease-in-out infinite;
+}
+
+
+.navbar{
+   
+    z-index: 999;
+
+}
+
+li>a{
+    color: white; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vh;
+    /*text-shadow: 2px 2px 2px #054F2A;*/
+    font-weight: bold;
+
+}
+
+/*
+.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
+    background-color: #054F2A;
+    border: 1px solid rgba(0,0,0,0.5);
+    -webkit-transition: all 0.2s ease-in-out !important;    
+    color: white;  
+     
+
+    
+}
+
+.navbar-custom .navbar-nav > li > a:hover{
+    box-shadow: 5px 5px 50px white;
+    -webkit-transition: all 0.2s ease-in-out;   
+       font-size:3.1vh;
+
+}
+ 
+.nav{
+    margin-left: 12%;
+}*/
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #4285F4; 
+    border-radius: 10px;
+    background-color: white;
+    /*border: 2px groove #4285F4;*/
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    -webkit-box-shadow: inset 0 0 6px white;
+    background-color: #4285F4;
+    /*border:1px solid white;*/
+
+
+}
+
+
+
+  
+ .ng-enter, .ng-leave { width:100%; position:absolute; }
+ .ng-enter {
+ -webkit-animation:zoomInDown 2s both ease-in;
+ -moz-animation:zoomInDown 2s both ease-in;
+ animation:zoomInDown 2s both ease-in;
+ opacity: 1;
+ }
+ .ng-leave {
+ -webkit-animation:zoomOutDown 1s both ease-in-out;
+ -moz-animation:zoomOutDown 1s both ease-in-out;
+ animation:zoomOutDown 1s both ease-in-out;
+}

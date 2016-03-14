@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INTRODUCTION</title>
+
+	          <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!--JQuery CDN link-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.8.23/jquery-ui.min.js"></script> 
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- FontAwesome Link-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+	<div class="container-fluid">
+		
+		<div class="row" id="nontable">
+ 			
+ 			<div class="col-md-5 col-xs-8">
+ 				 <div id="mypic"> </div>
+ 						<table class="table-borderless" id="introtable">
+						
+						<tr style="font-size: 8vh; position: relative;"><th>HELLO<x class="tabhead">!</x></th></tr>
+						<tr style="font-size: 5vh"><th>I'm Satish;</th></tr>
+						<tr style="font-size: 6vh"><th>I <i class="fa fa-heart"></i> (creativity <i class="fa fa-plus"></i> coding)</th></tr>
+						<tr style="font-size: 4.5vh"><th>I'm a <x class="tabhead">new-grad</x>, looking for Web/UI developer opportunities.</th></tr>
+					</table>
+
+ 			</div>
+ 			<div class="col-md-3 col-xs-4">
+
+			
+				
+			 
+			</div>
+
+			<div class="col-md-4 col-xs-6" id="right">
+				
+			 
+					<table class="table dettable1 borderless1 ">  
+					<tr><th colspan="2"><span id="quicktitle">QUICKE ABOUT ME</span></th></tr>
+					<tr><td><i class="fa fa-graduation-cap fa-3x"></i></td><td>Masters at San Jose State University</td></tr>
+					<tr><td class="tabhead">Stream</td><td>Software Engineering</td></tr>
+					<tr><td class="tabhead">Concentration</td><td>Cloud and Virtualization</td></tr>
+					<tr><td><i class="fa fa-calendar"></i></td><td>May 2016</td></tr>
+					</table>
+					
+					<table class="table dettable2 borderless1">
+					<tr><td><i class="fa fa-graduation-cap fa-2x"></i></td><td>Bachelors at MGIT</td></tr>
+					<tr><td class="tabhead">Stream</td><td>Engineering</td></tr>
+					<tr><td class="tabhead">Concentration</td><td>Information Technology</td></tr>
+					<tr><td><i class="fa fa-calendar-check-o"></i></td><td>May 2012</td></tr>
+				 	</table>
+ 					
+ 					<table class="resume">
+					 
+					<tr><th><span><a href="/career" class="btn grfbtn">Career Graph</button></span></th></tr>
+					</table>
+			</div> 
+
+		
+			
+		</div>
+		 
+	</div>
+
+</body>
+<script type="text/javascript">
+	
+
+function animation(){
+	$("#introtable").animate({top:"38vh"});
+			$("#introtable").animate({opacity:"1"},500).promise().done(function(){
+
+			$("#mypic").animate({marginLeft:"6vh"});
+			$("#mypic").animate({opacity:"0.6"}).promise().done(function(){
+
+			$("#quicktitle").animate({opacity:"1"}); 
+			$(".dettable1").animate({opacity:"1"},500); 
+			$(".dettable2").animate({opacity:"1"},500); 
+			$(".resume").animate({opacity:"1"},500); 
+
+			
+				})
+			})
+}
+
+		$(document).ready(function(){ 
+			animation();
+		})
+
+
+// $(".grfbtn").click(function() {
+     
+//     		$("#mypic").animate({top:"0vh"});
+// 			$("#mypic").animate({opacity:"0"}) 
+
+// 			$("#introtable").animate({opacity:"0"})
+// 			$("#introtable").animate({top:"0vh"}); 
+
+// 			$("#quicktitle").animate({opacity:"0"});
+// 			$("#quicktitle").animate({top:"0vh"});
+// 			$(".dettable1").animate({opacity:"0"}); 
+
+// 			$(".dettable2").animate({opacity:"0"}).promise().done(function(){
+
+// 			$("#nontable").fadeOut(1500).promise().done(function(){
+// 				$("#viewgraph").animate({opacity:1});
+// 				})
+// 			});
+		 
+ 
+		 
+// 			})
+ 
+	 
+  
+
+</script>
+
+</html>
