@@ -1,7 +1,4 @@
- .col-md-4>*{
- 	/*position: absolute;*/
- }
-
+ 
  #viewgraph:hover> #timeline{
  	opacity: 1;
  	-webkit-transition: all 1s ease-in-out;
@@ -9,38 +6,114 @@
 body
 {
 	background-image: url('/pages/img/intro_new.jpg');
-	background-color: rgba(255,255,255,0);
+	background-color: #3361B6; 
 	background-size: cover;
-	background-repeat: no-repeat;
-}
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-transition: all 0.3s ease-in-out;
 
+   
+}  
+
+    @media only screen and (max-width: 414px) and (max-width: 736px) {
+    /* For Iphones: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{
+    	background-image: url('/pages/img/mobile.jpg'); 
+    -webkit-transition: all 0.3s ease-in-out;
+		} 
+    #mypic{
+		margin-top: 20vh; 
+		opacity: 1;
+		background-image: url('/pages/img/me.jpg');
+		border: 2px solid white;
+    }
+    .dettable1,.dettable2{
+    	background-color: rgba(0,0,0,0.2);
+    }
+    .fa-plus{
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	}    
+
+	#skills{
+		background-color: rgba(0,0,0,0.2);
+		height: inherit;
+	} 
+	#cubecont{
+		height: inherit;
+	}
+	.face{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	background-color: #4285F4 !important;
+	display: inline-block;
+	border: 8px groove #3361B5 !important;
+	-webkit-transition: all 1s ease-in-out;
+			} 
+
+			.dleft,.dright,.dettablea{
+				background-color: rgba(0,0,0,0.2);
+			}
+
+			.dettablea{
+				color: white !important;
+			}
+			.chart{
+ 			overflow-x:scroll; 
+			margin-top: 5%;
+				}
+
+			.thisrow{
+				display: none;
+			}
+			.mobrow{
+				display: inline-block !important; 
+							}
+
+}
+ 
 .grfbtn{
-	margin-left: 8vw; 
+	margin-left: 120%; 
 	color:white; 
 	background-color: #4285F4;
 	box-shadow: 5px 5px 50px black; 
-	width: 9vw;
+	width: auto;
 	height: 5vh;
 	font: 5vh;
 	-webkit-transition: all 1s ease-in-out;
  
 }
 
-.fa-heart,.fa-plus{
-	color: #4285F4;
+.fa-heart{
+	color: red;
 	text-shadow: 2px 2px 2px black;
 }
-
- 
-.resume tbody tr td, .resume tbody tr th, .resume thead tr th {
-    border: none;
+.fa-plus{
+	color: #3361B5;
+	text-shadow: 2px 2px 2px black;
 }
+  
 
 .dettable1>tbody>tr:hover{
 	background-color: white;
 	color: #3361B5;
 
 }
+  
 
 .dettable1>tbody>tr:hover>.dettable1>tbody>tr>th>#quicktitle{
 	background-color: transparent;
@@ -84,14 +157,19 @@ a{
 	color: #3361B5;
 	 text-shadow: 2px 2px 2px black;
 }
+#introtable>tr>th{
+	font-size: 18vh; 
+	position: relative;
+}
 #introtable{
  
 	color: black; 
-	position: absolute;	 
+	position: relative;	 
 	width: auto;
-	opacity: 0;
+	opacity: 1;
 	-webkit-transition: all 1s ease-in-out;
 	font-family: 'Josefin Sans', sans-serif;
+	margin-top:10vh;
 }
 
 	#mypic{
@@ -103,8 +181,9 @@ a{
 		background-size: cover;
 		-webkit-transition: all 1s ease-in-out;
 		box-shadow: 5px 5px 100px 30px black;
-		opacity: 0.5
-		margin-top: 10vh;
+		opacity: 0.5;
+		margin-top: 8vh;
+		margin-left: 4vh;
 		z-index: 1;
 	}
 
@@ -125,22 +204,25 @@ a{
 		font-family: 'Josefin Sans', sans-serif;
 	  	color: black; 
 		-webkit-transition: all 1s ease-in-out; 
-		opacity: 0;
+		opacity: 1;
+		width: 100% !important;
+		position: relative;
 		margin-top: 7vh; 
-		font-weight: bold;
-		font-weight: 2.5vh;
+		font-weight: bold; 
 	}
-
+/*
  .resume{ 
 		opacity: 0;
-	 	}
+	 	}*/
 
 .dettable2{ 
 		font-family: 'Josefin Sans', sans-serif; 
 		color: black;
 		-webkit-transition: all 1s ease-in-out; 
-		opacity: 0;
+		opacity: 1;
 		margin-top: 8vh; 
+		width: 100%;
+		position: relative;
 		font-weight: bold;
 
 		font-weight: 2.5vh;
@@ -148,7 +230,7 @@ a{
 
 #quicktitle{
 	-webkit-transform: all 1s ease-in-out;
-	opacity: 0;
+	opacity: 1;
 	font-size: 3vh;
 		}
 
@@ -164,7 +246,7 @@ a{
     border-top: 1px ridge white !important;
 }
  
-	html,body,.container-fluid,.row{height:100;}
+	html,body,.container-fluid,.row{height:100%;}
 
 	.row>img{
 		width: 100%;
@@ -172,7 +254,7 @@ a{
 		-webkit-filter:blur(8px);
 		box-shadow: 10px 10px 10px 25px white;
 		background-color: transparent;
-		position: absolute;	
+		position: relative;	
 	}
 	 
 .fa-calendar,.fa-calendar-check-o,.fa-graduation-cap{

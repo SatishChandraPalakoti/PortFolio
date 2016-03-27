@@ -1,24 +1,33 @@
-body{
-	background-image: url('/pages/img/intro_new.jpg');
-	overflow: hidden;
-	background-size: cover;
+    
+
+html,.col-xs-12{
+	 height: 100%;
 }
-#skills{
-	 height: 80vh;
-	float: right;
-	z-index: 1; 
-	position: relative; 
+#skills{ 
+	height: 80vh;
+	width: 100%;
+	float: right;  
 	opacity: 0;
 	padding-left: 5%;
 	font-weight: bold; 
 	font-size: 15px;
 	font-family: 'Josefin Sans', sans-serif; 
 	overflow: scroll;
-	width: 30vw;
-	overflow-x:hidden; 
+	overflow-x:hidden;  
 
 }
+#cubecont{ 
+	 	float: left;
+	 	width: 100%;
+		-webkit-perspective: 1100px;
+		-webkit-transform-style: preserve-3d;
+		-webkit-animation: anim1 5s ease-in-out infinite;
+		padding-top: 20%;
+		height: auto;
+		
 
+
+	}
  
 #ident{
 	color: white;
@@ -94,17 +103,7 @@ body{
 
 	}
 
-	#cubecont{ 
-	 	float: left;
-	 	width: 50%;
-		-webkit-perspective: 1100px;
-		-webkit-transform-style: preserve-3d;
-		-webkit-animation: anim1 5s ease-in-out infinite;
-		margin-top: 20%;
-		height: auto;
-
-
-	}
+	
 
 	@-webkit-keyframes anim{
 		from{-webkit-transform: rotateY(0deg)}
@@ -126,34 +125,35 @@ body{
  
 
 	#cube:hover>#f1{
-		 -webkit-transform: translateZ(300px);
+		 -webkit-transform: translateZ(180px);
 		 
 		 
 	}
 
 	#cube:hover>#f2{
-		 -webkit-transform: translateZ(-300px);
+		 -webkit-transform: translateZ(-180px);
 		 
 	}
 
 	#cube:hover>#f3{
-		 -webkit-transform: translateX(300px);
+		 -webkit-transform: translateX(180px);
 		 
 	}
 
 		#cube:hover>#f4{
-		 -webkit-transform: translateX(-300px);
+		 -webkit-transform: translateX(-180px);
 		 
 		 
 	}
 
 		#cube:hover>#f5{
-		 -webkit-transform: translateY(300px);
+		 -webkit-transform: translateZ(20px);
+		 -webkit-transform: rotateX(70deg)
 		 
 		 
 	}
 
 	#cube:hover>#f6{
-		 -webkit-transform: translateY(-300px);
+		 -webkit-transform: translateY(-180px);
 		 
 	}

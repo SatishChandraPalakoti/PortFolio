@@ -4,7 +4,7 @@
  
 	<base href="/">
 	 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
+	 <meta name="viewport" content="width=device-width" />
 	<title>Satish Chandra Palakoti</title>
  
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -54,34 +54,32 @@
 
 	<header>
 		
-		<nav class="navbar navbar-custom">	
-			<div class="navbar-header"> 
-			<img src="pages/img/greece.png">	
-			 </div>
-		
-		<ul class="nav navbar-nav">
-			<li><a href="/">HOME</a></li>
-			<li><a href="/skills">SKILLS</a></li>
-			<li><a href="/work">WORK</a></li>
-			<li><a href="/about">ABOUT</a></li> 
-			<li><a href="/recos">RECOS</a></li>
-			<li><a href="/contact">CONTACT</a></li>
-		</ul>
+		<nav class="navbar navbar-custom navbar-static-top">	
+			<a href="#" class="navbar-brand"> 
+			<img id="greece" src="pages/img/greece.png" >
+			 </a>
+		<text id="devtitle" class="navbar-toggle">PSC</text>
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><img id="plus" src="pages/img/plus.png"></button>
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<ul class="nav navbar-nav navbar-center">
+				<li><a href="/">HOME</a></li> 
+				<li><a href="/skills">SKILLS</a></li>
+				<li><a href="/work">WORK</a></li>
+				<li><a href="/about">ABOUT</a></li> 
+				<li><a href="/recos">RECOS</a></li>
+				<li><a href="/contact">CONTACT</a></li>
+			</ul>	
+		</div>
 		</nav>
 
 	</header>
 
 	<div class="container-fluid">
  
-		<div class="row" id="content-views">		
-				<div class="col-md-12" ng-view> 
-				</div>
+		<div class="row" id="content-views" ng-view>		
+				 
 		</div>
-
-
-	 	<div class="row">
-	 	 	
-	 	</div>
+ 
 
 	</div>
  
