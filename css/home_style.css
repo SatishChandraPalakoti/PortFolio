@@ -79,52 +79,7 @@ li>a{
     font-weight: bold;
 
 }
-
-
- @media only screen and (max-width: 414px) and (max-width: 736px) {
-    /* For Iphones: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}  
-    #greece{
-        width: 60px;
-        height: 50px;
-        margin-top: 0;
-    }
-
-    #myimg{
-        height: 100vh;
-
-    }
-    #myimg1{
-        position: fixed;
-    }
-
-    #myimg2{
-        display: none;
-    }
-    .nav>li{
-        border-bottom:1px solid #3361B6;  
-    }
-    .nav>li>a>*{
-        text-shadow: 0px 0px 5px black;
-    }
-
-    #proj2>*{
-        display: none;
-    }
-
  
-}
 /*
 .navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
     background-color: #054F2A;
