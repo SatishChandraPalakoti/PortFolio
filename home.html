@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head>
- 
-	<base href="/">
+ <head>
+  
+  	<base href="/">
 	 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	 <meta name="viewport" content="width=device-width" />
 	<title>Satish Chandra Palakoti</title>
@@ -49,17 +48,27 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-chart/0.1.0/ng-google-chart.js" type="text/javascript"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
-</head> 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+</head>
 <body ng-app='routerapp' ng-controller='mainController'>
-
-	<header>
+<header>
 		
 		<nav class="navbar navbar-custom navbar-static-top">	
 			<a href="#" class="navbar-brand"> 
 			<img id="greece" src="pages/img/greece.png" >
 			 </a>
 		<text id="devtitle" class="navbar-toggle">PSC</text>
-		<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><img id="plus" src="pages/img/plus.png"></button>
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<!-- <span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span> -->
+		<img id="plus" src="pages/img/plus.png">
+		</button>
 		<div class="collapse navbar-collapse navHeaderCollapse">
 			<ul class="nav navbar-nav navbar-center">
 				<li><a href="/">HOME</a></li> 
@@ -72,23 +81,51 @@
 		</div>
 		</nav>
 
-	</header>
-
-	<div class="container-fluid">
+	</header> 	
+	 <div class="container-fluid">
  
-		<div class="row" id="content-views" ng-view>		
+		<div id="content-views" ng-view>		
 				 
 		</div>
  
 
 	</div>
- 
-	 
+ <!--  -->
 
-</body>
+ 		<div id="loader-wrapper">
+			<div id="loader">
+			
+			</div>
+            <div class="loader-section section-right">
+            	
+            	<img src="pages/img/helmet.png" id="myimg">
+            	<img src="pages/img/loadtext.png" id="myimg1"> 
+            	<img src="pages/img/loadsword.png" id="myimg2"> 
+
+            </div>
+
+		 
+
+		 
+
+	</div> 
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        // $('h1').css('color','#222222');
+    }, 3000);
+    
+});
+</script>
 <style type="text/css">
-
-
-</style>
-
+	 
+ 
+  
+	</style>
+</body>
 </html>
